@@ -1,0 +1,37 @@
+body {
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.container>div {
+    height: 200px;
+    width: 300px;
+    border: solid purple 8px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+img {
+    object-position: center;
+    object-fit: contain;
+    height: inherit;
+    width: inherit;
+}
+
+.result {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: xx-large;
+    color: purple;
+}
