@@ -3,35 +3,97 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    width: 75%;
+header {
+    font-family: 'Press Start 2P', cursive;
+    color: #fac650;
+    background-color: #111720;
+    font-size: 32px;
+    text-align: center;
+    padding: 38px;
 }
 
-.container>div {
-    height: 200px;
-    width: 300px;
-    border: solid purple 8px;
-    border-radius: 8px;
+footer,
+main {
+    background-color: #222831;
+    color: #dddddd;
+    font-family: "Roboto", sans-serif;
     text-align: center;
 }
 
-img {
-    object-position: center;
-    object-fit: contain;
-    height: inherit;
-    width: inherit;
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    padding: 48px;
+}
+
+.game-info {
+    font-size: xx-large;
+    font-weight: bolder;
+    padding-bottom: 16px;
+}
+
+.score-info {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.game-score {
+    display: flex;
+    gap: 32px;
 }
 
 .result {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bolder;
-    font-size: xx-large;
-    color: purple;
+    width: 170px;
+    box-sizing: border-box;
+}
+
+.choice {
+    font-size: 72px;
+    padding: 32px;
+}
+
+.score {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.options {
+    padding: 48px;
+    display: flex;
+    gap: 32px;
+}
+
+.btn {
+    background-color: #393e46;
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+    border-color: transparent;
+    font-size: 72px;
+}
+
+#modal {
+    width: 150px;
+    height: 100px;
+    border-radius: 8px;
+    background-color: #222831;
+    color: white;
+    position: relative;
+    font-size: large;
+}
+
+#modal button {
+    background-color: #393e46;
+    border-radius: 4px;
+    border-color: transparent;
+    color: #dddddd;
+    font-size: large;
+    position: absolute;
+    bottom: 15px;
+    right: 40px;
 }
